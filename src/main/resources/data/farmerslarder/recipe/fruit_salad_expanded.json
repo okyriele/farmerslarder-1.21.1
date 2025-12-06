@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:foods/fruit"
+    },
+    {
+      "tag": "c:foods/fruit"
+    },
+    {
+      "tag": "c:foods/fruit"
+    },
+    {
+      "tag": "c:foods/berry"
+    },
+    {
+      "tag": "c:foods/berry"
+    },
+    {
+      "item": "c:foods/fruit"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:fruit_salad"
+  }
+}

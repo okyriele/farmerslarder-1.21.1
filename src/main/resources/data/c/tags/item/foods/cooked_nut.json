@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "pamhc2trees:roastedalmonditem",
+    "pamhc2trees:roastedcashewitem",
+    "pamhc2trees:roastedchestnutitem",
+    "pamhc2trees:roastedhazelnutitem",
+    "pamhc2trees:roastedpecanitem",
+    "pamhc2trees:roastedpinenutitem",
+    "pamhc2trees:roastedpistachioitem",
+    "pamhc2trees:roastedwalnutitem",
+    "pamhc2trees:roastedacornitem"
+  ]
+}
