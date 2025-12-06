@@ -1,0 +1,13 @@
+{
+  "itemGroup.farmerslarder": "Example Mod Tab",
+  "block.farmerslarder.example_block": "Example Block",
+  "item.farmerslarder.example_item": "Example Item",
+
+  "farmerslarder.configuration.title": "Farmer's Larder Configs",
+  "farmerslarder.configuration.section.farmerslarder.common.toml": "Farmer's Larder Configs",
+  "farmerslarder.configuration.section.farmerslarder.common.toml.title": "Farmer's Larder Configs",
+  "farmerslarder.configuration.items": "Item List",
+  "farmerslarder.configuration.logDirtBlock": "Log Dirt Block",
+  "farmerslarder.configuration.magicNumberIntroduction": "Magic Number Text",
+  "farmerslarder.configuration.magicNumber": "Magic Number"
+}
