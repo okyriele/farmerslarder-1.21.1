@@ -1,0 +1,27 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+	"key": {
+		"#": {
+			"tag": "c:foods/milk"
+		},
+		"O": {
+			"item": "farmersdelight:pie_crust"
+		},
+		"a": {
+			"item": "farmersdelight:pumpkin_slice"
+		},
+		"x": {
+			"item": "minecraft:sugar"
+		}
+	},
+	"pattern": [
+		"a#a",
+		"xOx"
+	],
+	"result": {
+		"count": 1,
+		"id": "farmerslarder:pumpkin_pie_item"
+	},
+	"show_notification": true
+}

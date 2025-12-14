@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:chicken",
+    {
+      "id": "#c:foods/raw_meats",
+      "required": false
+    },
+    {
+      "id": "#c:rawmeats",
+      "required": false
+    }
+  ]
+}

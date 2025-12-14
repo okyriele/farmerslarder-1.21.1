@@ -1,14 +1,41 @@
 {
   "replace": false,
   "values": [
-    "pamhc2trees:roastedalmonditem",
-    "pamhc2trees:roastedcashewitem",
-    "pamhc2trees:roastedchestnutitem",
-    "pamhc2trees:roastedhazelnutitem",
-    "pamhc2trees:roastedpecanitem",
-    "pamhc2trees:roastedpinenutitem",
-    "pamhc2trees:roastedpistachioitem",
-    "pamhc2trees:roastedwalnutitem",
-    "pamhc2trees:roastedacornitem"
+    {
+      "id": "pamhc2trees:roastedalmonditem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:roastedcashewitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:roastedchestnutitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:roastedhazelnutitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:roastedpecanitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:roastedpinenutitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:roastedpistachioitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:roastedwalnutitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:roastedacornitem",
+      "required": false
+    }
   ]
 }

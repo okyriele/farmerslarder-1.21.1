@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "farmerslarder:carrot_cake_item"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 7,
+        "id": "farmerslarder:carrot_cake_slice"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

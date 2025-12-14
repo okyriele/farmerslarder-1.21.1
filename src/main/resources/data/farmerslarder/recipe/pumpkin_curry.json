@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:foods/vegetables/pumpkin"
+    },
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "tag": "c:foods/vegetables/onion"
+    },
+    {
+      "tag": "c:foods/rice"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:pumpkin_curry"
+  }
+}

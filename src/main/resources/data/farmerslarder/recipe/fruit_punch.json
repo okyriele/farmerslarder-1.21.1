@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:foods/fruit"
+    },
+    {
+      "tag": "c:foods/fruit"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "c:foods/berry"
+    },
+    {
+      "tag": "c:foods/berry"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:fruit_punch"
+  }
+}

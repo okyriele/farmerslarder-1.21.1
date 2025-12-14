@@ -1,0 +1,19 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		{
+			"item": "minecraft:pumpkin"
+		},
+		{
+			"tag": "c:foods/milk"
+		},
+		{
+			"tag": "c:foods/sweetener"
+		}
+	],
+	"result": {
+		"id": "minecraft:pumpkin_pie",
+		"count": 2
+	}
+}

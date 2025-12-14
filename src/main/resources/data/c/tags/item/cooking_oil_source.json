@@ -1,0 +1,34 @@
+{
+  "values": [
+    "farmerslarder:roasted_sunflower_seeds",
+    "farmerslarder:roasted_pumpkin_seeds",
+    {
+      "id": "pamhc2trees:avocadoitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:coconutitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:oliveitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:roastedpistachioitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:roastedwalnutitem",
+      "required": false
+    },
+    {
+      "id": "#c:crops/peanut",
+      "required": false
+    },
+    {
+      "id": "#c:seeds/flax",
+      "required": false
+    }
+  ]
+}

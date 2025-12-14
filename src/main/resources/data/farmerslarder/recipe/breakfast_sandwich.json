@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "farmerslarder:bagel"
+    },
+    {
+      "item": "farmersdelight:fried_egg"
+    },
+    {
+      "tag": "c:foods/cooked_meat"
+    }
+  ],
+  "result": {
+    "id": "farmerslarder:breakfast_sandwich",
+    "count": 1
+  }
+}

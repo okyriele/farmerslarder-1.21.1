@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      {"item": "farmerslarder:roasted_sunflower_seeds"},
+      {"item": "farmerslarder:roasted_pumpkin_seeds"}
+    ],
+    {
+      "tag": "c:foods/fruits/dried_fruit"
+    },
+    [
+      {"tag": "c:foods/cooked_nut"},
+      {"item": "minecraft:cocoa_beans"}
+    ]
+  ],
+  "result": {
+    "id": "farmerslarder:trailmix",
+    "count": 1
+  }
+}

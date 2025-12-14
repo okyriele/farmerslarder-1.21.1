@@ -1,6 +1,9 @@
 {
   "type": "farmersdelight:cooking",
-  "cookingtime": 100,
+  "container": {
+    "count": 1,
+    "id": "minecraft:bucket"
+  },
   "experience": 1.0,
   "ingredients": [
     {
@@ -14,11 +17,8 @@
     }
   ],
   "recipe_book_tab": "misc",
-  "container": {
-    "item": "minecraft:bucket"
-  },
   "result": {
-    "count": 4,
+    "count": 1,
     "id": "minecraft:milk_bucket"
   }
 }

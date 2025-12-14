@@ -1,5 +1,13 @@
 {
   "values": [
-    "farmersdelight:fried_egg"
+    "farmerslarder:hardboiled_egg",
+    {
+      "id": "farmersdelight:fried_egg",
+      "required": false
+    },
+    {
+      "id": "mynethersdelight:boiled_egg",
+      "required": false
+    }
   ]
 }

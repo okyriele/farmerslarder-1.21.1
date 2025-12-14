@@ -1,5 +1,9 @@
 {
   "values": [
-    "#c:vegetables"
+    "farmerslarder:bamboo_shoots",
+    {
+      "id": "farmersdelight:pumpkin_slice",
+      "required": false
+    }
   ]
 }

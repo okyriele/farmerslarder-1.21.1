@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 3.0,
+  "ingredients": [
+    {
+      "tag": "c:foods/vegetable"
+    },
+    {
+      "tag": "c:foods/vegetable"
+    },
+    {
+      "tag": "c:foods/vegetables/onion"
+    },
+    {
+      "tag": "c:foods/vegetables/carrot"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:garden_veggie_soup"
+  }
+}

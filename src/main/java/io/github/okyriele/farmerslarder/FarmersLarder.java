@@ -4,14 +4,21 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
+import io.github.okyriele.farmerslarder.block.FarmersLarderBlocks;
+import io.github.okyriele.farmerslarder.effect.FarmersLarderEffects;
+import io.github.okyriele.farmerslarder.item.FarmersLarderDrinks;
+import io.github.okyriele.farmerslarder.item.FarmersLarderItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.alchemy.Potion;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -38,30 +45,7 @@ public class FarmersLarder {
     public static final String MODID = "farmerslarder";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
-    // Create a Deferred Register to hold Blocks which will all be registered under the "farmerslarder" namespace
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(MODID);
-    // Create a Deferred Register to hold Items which will all be registered under the "farmerslarder" namespace
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
-    // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "farmerslarder" namespace
-    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    // Creates a new Block with the id "farmerslarder:example_block", combining the namespace and path
-    public static final DeferredBlock<Block> EXAMPLE_BLOCK = BLOCKS.registerSimpleBlock("example_block", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
-    // Creates a new BlockItem with the id "farmerslarder:example_block", combining the namespace and path
-    public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", EXAMPLE_BLOCK);
-
-    // Creates a new food item with the id "farmerslarder:example_id", nutrition 1 and saturation 2
-    public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
-            .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
-
-    // Creates a creative tab with the id "farmerslarder:example_tab" for the example item, that is placed after the combat tab
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.farmerslarder")) //The language key for the title of your CreativeModeTab
-            .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
-            .displayItems((parameters, output) -> {
-                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
-            }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
@@ -69,17 +53,15 @@ public class FarmersLarder {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        // Register the Deferred Register to the mod event bus so blocks get registered
-        BLOCKS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so items get registered
-        ITEMS.register(modEventBus);
-        // Register the Deferred Register to the mod event bus so tabs get registered
-        CREATIVE_MODE_TABS.register(modEventBus);
-
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (FarmersLarder) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
+
+        // Register the Deferred Register to the mod event bus so items get registered
+        FarmersLarderItems.register(modEventBus);
+        FarmersLarderBlocks.register(modEventBus);
+        FarmersLarderEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -90,21 +72,61 @@ public class FarmersLarder {
 
     private void commonSetup(FMLCommonSetupEvent event) {
         // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
-
-        if (Config.LOG_DIRT_BLOCK.getAsBoolean()) {
-            LOGGER.info("DIRT BLOCK >> {}", BuiltInRegistries.BLOCK.getKey(Blocks.DIRT));
-        }
-
-        LOGGER.info("{}{}", Config.MAGIC_NUMBER_INTRODUCTION.get(), Config.MAGIC_NUMBER.getAsInt());
-
-        Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
+        LOGGER.info("HELLO FROM Farmer's Larder");
     }
 
-    // Add the example block item to the building blocks tab
+    // Add the mod items to the correct creative tabs
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(EXAMPLE_BLOCK_ITEM);
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(FarmersLarderItems.SYRUP_BOTTLE);
+            event.accept(FarmersLarderItems.BAMBOO_SHOOTS);
+            event.accept(FarmersLarderItems.ROASTED_PUMPKIN_SEEDS);
+            event.accept(FarmersLarderItems.ROASTED_SUNFLOWER_SEEDS);
+            event.accept(FarmersLarderItems.DRIED_BERRIES);
+            event.accept(FarmersLarderItems.TRAILMIX);
+            event.accept(FarmersLarderItems.GRANOLA_BAR);
+            event.accept(FarmersLarderItems.JERKY);
+            event.accept(FarmersLarderItems.HARDBOILED_EGG);
+            event.accept(FarmersLarderItems.BAGEL);
+            event.accept(FarmersLarderItems.DONUT);
+            event.accept(FarmersLarderItems.PUMPKIN_BREAD);
+            event.accept(FarmersLarderItems.WILD_GREENS_SALAD);
+            event.accept(FarmersLarderItems.GARDEN_VEGGIE_SOUP);
+            event.accept(FarmersLarderItems.PUMPKIN_CURRY);
+            event.accept(FarmersLarderItems.SAUTEED_FIDDLEHEADS);
+            event.accept(FarmersLarderItems.BREAKFAST_SANDWICH);
+            event.accept(FarmersLarderItems.COOKING_OIL);
+            event.accept(FarmersLarderItems.HOME_FRIES);
+            event.accept(FarmersLarderItems.FRIED_TOMATOES);
+            event.accept(FarmersLarderItems.FISH_AND_CHIPS);
+            event.accept(FarmersLarderItems.BRAISED_BAMBOO_SHOOTS);
+            event.accept(FarmersLarderItems.FRIED_CHICKEN);
+            event.accept(FarmersLarderItems.FRIED_CHICKEN_BUCKET);
+            event.accept(FarmersLarderBlocks.WESTERN_BREAKFAST);
+            event.accept(FarmersLarderItems.WESTERN_BREAKFAST_PLATE);
+            event.accept(FarmersLarderBlocks.CARROT_CAKE);
+            event.accept(FarmersLarderItems.CARROT_CAKE_SLICE);
+            event.accept(FarmersLarderBlocks.CHOCOLATE_CAKE);
+            event.accept(FarmersLarderItems.CHOCOLATE_CAKE_SLICE);
+            event.accept(FarmersLarderBlocks.SPICE_CAKE);
+            event.accept(FarmersLarderItems.SPICE_CAKE_SLICE);
+            event.accept(FarmersLarderBlocks.GLOWBERRY_CHEESECAKE);
+            event.accept(FarmersLarderItems.GLOWBERRY_CHEESECAKE_SLICE);
+            event.accept(FarmersLarderBlocks.PUMPKIN_PIE);
+            event.accept(FarmersLarderItems.PUMPKIN_PIE_SLICE);
+            event.accept(FarmersLarderItems.CAKE_BLOCKA_ICECREAM);
+            event.accept(FarmersLarderItems.CHOCOLATE_ICECREAM);
+            event.accept(FarmersLarderItems.SWEET_BERRY_ICECREAM);
+            event.accept(FarmersLarderItems.TRIFECTA_SUNDAE);
+            event.accept(FarmersLarderItems.FRUIT_PUNCH);
+            event.accept(FarmersLarderItems.CACTUS_JUICE);
+            event.accept(FarmersLarderItems.SWEET_BERRY_JUICE);
+            event.accept(FarmersLarderItems.GLOWBERRY_JUICE);
+            event.accept(FarmersLarderItems.PUMPKIN_JUICE);
+        }
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(FarmersLarderBlocks.MAMMOTH_SUNFLOWER);
+            event.accept(FarmersLarderItems.SUNFLOWER_SEEDS);
         }
     }
 

@@ -1,0 +1,182 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "pool1",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farmerslarder:carrot_cake_slice"
+        }
+      ]
+    },
+    {
+      "name": "pool2",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "parameters": {
+                "extra": 1,
+                "probability": 1.0
+              }
+            }
+          ],
+          "name": "farmerslarder:carrot_cake_slice"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "farmersdelight:carrot_cake",
+          "properties": {
+            "bites": "5"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool3",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "parameters": {
+                "extra": 2,
+                "probability": 1.0
+              }
+            }
+          ],
+          "name": "farmerslarder:carrot_cake_slice"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "farmersdelight:carrot_cake",
+          "properties": {
+            "bites": "4"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool4",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "parameters": {
+                "extra": 3,
+                "probability": 1.0
+              }
+            }
+          ],
+          "name": "farmerslarder:carrot_cake_slice"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "farmersdelight:carrot_cake",
+          "properties": {
+            "bites": "3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool5",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "parameters": {
+                "extra": 4,
+                "probability": 1.0
+              }
+            }
+          ],
+          "name": "farmerslarder:carrot_cake_slice"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "farmersdelight:carrot_cake",
+          "properties": {
+            "bites": "2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool6",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "parameters": {
+                "extra": 5,
+                "probability": 1.0
+              }
+            }
+          ],
+          "name": "farmerslarder:carrot_cake_slice"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "farmersdelight:carrot_cake",
+          "properties": {
+            "bites": "1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool7",
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "parameters": {
+                "extra": 6,
+                "probability": 1.0
+              }
+            }
+          ],
+          "name": "farmerslarder:carrot_cake_slice"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "farmersdelight:carrot_cake",
+          "properties": {
+            "bites": "0"
+          }
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ]
+}

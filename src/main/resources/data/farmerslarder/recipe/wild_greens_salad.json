@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+        "item": "farmerslarder:roasted_sunflower_seeds"
+    },
+    {
+        "item": "minecraft:dandelion"
+    },
+    {
+        "tag": "c:foods/leafy_green"
+    },
+    {
+        "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:wild_greens_salad"
+  }
+}

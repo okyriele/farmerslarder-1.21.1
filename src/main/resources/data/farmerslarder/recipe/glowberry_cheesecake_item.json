@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "farmersdelight:pie_crust"
+    },
+    "m": {
+      "tag": "c:foods/milk"
+    },
+    "g": {
+      "item": "minecraft:glow_berries"
+    }
+  },
+  "pattern": [
+    "ggg",
+    "ggg",
+    "mOm"
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:glowberry_cheesecake_item"
+  }
+}

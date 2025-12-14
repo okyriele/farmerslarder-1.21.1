@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:paper"
+  },
+  "experience": 0,
+  "ingredients": [
+    {
+      "tag": "c:foods/vegetables/potato"
+    },
+    {
+      "tag": "c:foods/vegetables/potato"
+    },
+    {
+      "tag": "c:foods/vegetables/potato"
+    },
+    {
+      "item": "farmerslarder:cooking_oil"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:home_fries"
+  }
+}

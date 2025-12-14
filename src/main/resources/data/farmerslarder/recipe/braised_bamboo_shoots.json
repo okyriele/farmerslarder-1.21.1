@@ -1,0 +1,33 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "farmerslarder:bamboo_shoots"
+    },
+    {
+      "item": "farmerslarder:bamboo_shoots"
+    },
+    {
+      "tag": "c:foods/vegetables/onion"
+    },
+    {
+      "tag": "c:foods/vegetables/carrot"
+    },
+    {
+      "item": "farmerslarder:cooking_oil"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:braised_bamboo_shoots"
+  }
+}

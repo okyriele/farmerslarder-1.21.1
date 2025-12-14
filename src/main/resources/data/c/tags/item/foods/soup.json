@@ -1,0 +1,9 @@
+{
+  "values": [
+    "farmerslarder:garden_veggie_soup",
+    {
+      "id": "#c:foods/soups",
+      "required": false
+    }    
+  ]
+}

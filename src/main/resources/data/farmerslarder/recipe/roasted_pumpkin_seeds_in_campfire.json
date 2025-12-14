@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "ingredient": {
+    "item": "minecraft:pumpkin_seeds"
+  },
+  "result": {
+    "id": "farmerslarder:roasted_pumpkin_seeds"
+  },
+  "cookingtime": 75
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "cake",
+  "ingredients": [
+    {
+      "item": "farmerslarder:carrot_cake_slice"
+    },
+    {
+      "item": "farmerslarder:carrot_cake_slice"
+    },
+    {
+      "item": "farmerslarder:carrot_cake_slice"
+    },
+    {
+      "item": "farmerslarder:carrot_cake_slice"
+    },
+    {
+      "item": "farmerslarder:carrot_cake_slice"
+    },
+    {
+      "item": "farmerslarder:carrot_cake_slice"
+    },
+    {
+      "item": "farmerslarder:carrot_cake_slice"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:carrot_cake_item"
+  }
+}

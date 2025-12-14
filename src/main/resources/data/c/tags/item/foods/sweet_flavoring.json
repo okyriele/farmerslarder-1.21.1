@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:glowstone_dust",
+    {
+      "id": "pamhc2trees:vanillabeanitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:passionfruititem",
+      "required": false
+    }
+  ]
+}

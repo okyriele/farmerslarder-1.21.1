@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 3.0,
+  "ingredients": [
+    {
+      "item": "farmersdelight:chicken_cuts"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "farmerslarder:cooking_oil"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:fried_chicken"
+  }
+}

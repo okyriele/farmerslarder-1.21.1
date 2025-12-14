@@ -1,8 +1,10 @@
 {
   "values": [
-    "farmersdelight:milk_bottle",
-    "farmersdelight:apple_cider",
-    "farmersdelight:melon_juice",
-    "farmersdelight:hot_cocoa"
+    "minecraft:water_bottle",
+    "farmerslarder:fruit_punch",
+    "farmerslarder:cactus_juice",
+    "farmerslarder:sweet_berry_juice",
+    "farmerslarder:glowberry_juice",
+    "farmerslarder:pumpkin_juice"
   ]
 }

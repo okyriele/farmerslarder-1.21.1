@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:foods/dough"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "farmerslarder:cooking_oil"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 2,
+    "id": "farmerslarder:donut"
+  }
+}

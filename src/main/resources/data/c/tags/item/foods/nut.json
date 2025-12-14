@@ -1,5 +1,12 @@
 {
   "values": [
-    "c:nuts"
+    {
+      "id": "#c:nuts",
+      "required": false
+    },
+    {
+      "id": "#c:crops/peanut",
+      "required": false
+    }    
   ]
 }

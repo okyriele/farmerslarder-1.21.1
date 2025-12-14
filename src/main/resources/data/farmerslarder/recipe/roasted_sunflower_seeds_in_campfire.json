@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "misc",
+  "ingredient": {
+    "item": "farmerslarder:sunflower_seeds"
+  },
+  "result": {
+    "id": "farmerslarder:roasted_sunflower_seeds"
+  },
+  "cookingtime": 75
+}

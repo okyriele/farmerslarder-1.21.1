@@ -1,0 +1,7 @@
+{
+    "variants" : {
+        "" : {
+            "model" : "farmerslarder:block/pumpkin_pie_block"
+        }
+    }
+}

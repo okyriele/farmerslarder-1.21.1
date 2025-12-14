@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:foods/vegetables/pumpkin"
+    },
+    {
+      "tag": "c:foods/vegetables/pumpkin"
+    },
+    {
+      "tag": "c:foods/spice"
+    },
+    {
+      "tag": "c:foods/vegetables/pumpkin"
+    },
+    {
+      "tag": "c:foods/vegetables/pumpkin"
+    },
+    {
+      "tag": "c:foods/spice"
+    },
+    {
+      "tag": "c:foods/sweetener" 
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "tag": "c:foods/sweetener" 
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:pumpkin_juice"
+  }
+}

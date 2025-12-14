@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:bamboo"
+    }
+  ],
+  "tool": {
+    "tag": "minecraft:axes"
+  },
+ 
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "farmerslarder:bamboo_shoots" 
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "farmerslarder:bamboo_shoots"
+      }
+    }
+  ]
+}

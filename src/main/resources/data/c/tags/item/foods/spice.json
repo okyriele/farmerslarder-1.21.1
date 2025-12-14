@@ -1,0 +1,29 @@
+{
+  "values": [
+    "minecraft:blaze_powder",
+    {
+      "id": "#mynethersdelight:hot_spice",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:nutmegitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:peppercornitem",
+      "required": false
+    },
+    {
+      "id": "pamhc2trees:cinnamonitem",
+      "required": false
+    },
+    {
+      "id": "#c:dusts/cinnamon",
+      "required": false
+    },
+    {
+      "id": "#c:crops/chili_pepper",
+      "required": false
+    }    
+  ]
+}

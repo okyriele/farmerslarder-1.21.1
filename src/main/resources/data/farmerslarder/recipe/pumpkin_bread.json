@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:foods/dough"
+    },
+    {
+      "tag": "c:foods/vegetables/pumpkin"
+    },
+    {
+      "tag": "c:foods/sweetener"
+    }
+  ],
+  "result": {
+    "id": "farmerslarder:pumpkin_bread",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:torchflower"
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  },
+ 
+  "result": [
+    {
+      "item": {
+        "count": 2,
+        "id": "minecraft:torchflower_seeds" 
+      }
+    },
+    {
+      "chance": 0.23,
+      "item": {
+        "count": 1,
+        "id": "minecraft:torchflower_seeds"
+      }
+    }
+  ]
+}

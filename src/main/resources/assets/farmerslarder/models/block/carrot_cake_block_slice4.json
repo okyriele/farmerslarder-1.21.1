@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/cake_slice4",
+  "textures": {
+    "particle": "farmerslarder:block/carrotcakeblockside",
+    "bottom": "farmerslarder:block/carrotcakeblockbottom",
+    "side": "farmerslarder:block/carrotcakeblockside",
+    "top": "farmerslarder:block/carrotcakeblocktop",
+    "inside": "farmerslarder:block/carrotcakeblockinner"
+  }
+}

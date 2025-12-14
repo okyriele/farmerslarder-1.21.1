@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "item": "farmerslarder:fried_chicken"
+    },
+    {
+      "item": "farmerslarder:fried_chicken"
+    },
+    {
+      "item": "farmerslarder:fried_chicken"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:fried_chicken_bucket"
+  }
+}

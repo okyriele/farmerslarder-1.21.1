@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "O": {
+      "item": "minecraft:bowl"
+    },
+    "a": {
+      "item": "farmerslarder:cake_blocka_icecream"
+    },
+    "c": {
+      "item": "farmerslarder:chocolate_icecream"
+    },
+    "s": {
+      "item": "farmerslarder:sweet_berry_icecream"
+    },
+    "o": {
+      "item": "minecraft:sweet_berries"
+    }
+  },
+  "pattern": [
+    " o ",
+    "acs",
+    " O "
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:trifecta_sundae"
+  }
+}

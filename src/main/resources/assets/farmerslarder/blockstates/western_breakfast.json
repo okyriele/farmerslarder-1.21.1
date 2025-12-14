@@ -1,0 +1,7 @@
+{
+    "variants" : {
+        "" : {
+            "model" : "farmerslarder:block/western_breakfast_block"
+        }
+    }
+}

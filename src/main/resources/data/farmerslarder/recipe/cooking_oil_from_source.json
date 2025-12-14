@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "tag": "c:cooking_oil_source"
+    },
+    {
+      "tag": "c:cooking_oil_source"
+    },
+    {
+      "tag": "c:cooking_oil_source"
+    }
+  ],
+  "result": {
+    "id": "farmerslarder:cooking_oil",
+    "count": 1
+  }
+}

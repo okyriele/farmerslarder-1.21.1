@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:apple",
+    "minecraft:melon_slice",
+    {
+      "id": "#c:fruits",
+      "required": false
+    }
+  ]
+}

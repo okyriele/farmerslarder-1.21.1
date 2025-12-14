@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+        "item": "farmerslarder:syrup_bottle"
+    },
+    {
+        "item": "farmerslarder:fried_tomatoes"
+    },
+    {
+        "item": "farmerslarder:bagel"
+    },
+    {
+        "item": "farmerslarder:home_fries"
+    },
+    [
+      {"item": "minecraft:cooked_beef"},
+      {"item": "farmersdelight:cooked_bacon"},
+      {"item": "mynethersdelight:roasted_sausage"}
+    ],
+    [
+      {"item": "minecraft:cooked_beef"},
+      {"item": "farmersdelight:cooked_bacon"},
+      {"item": "mynethersdelight:roasted_sausage"}
+    ],
+    {
+        "tag": "c:foods/cooked_egg"
+    },
+    {
+        "item": "minecraft:bowl"
+    },
+    {
+        "tag": "c:foods/cooked_egg"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmerslarder:western_breakfast_item"
+  }
+}
